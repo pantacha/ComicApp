@@ -1,0 +1,15 @@
+<h1 class="animated fadeIn">{{heroe.nombre | uppercase}}</h1>
+<hr>
+<div class="row animated fadeIn fast">
+  <div class="col-md-4">
+    <img class="img-fluid" [src]="heroe.img" [alt]="heroe.nombre">
+    <br><br>
+    <button (click)="backToHeroes()" type="button" class="btn btn-outline-danger btn-block">Back</button>
+  </div>
+  <div class="col-md-8">
+    <h3>Bio</h3>
+    <hr>
+    <p>{{heroe.bio}}</p>
+    <img class="logo" [src]="heroe.casa" [alt]="heroe.nombre">
+  </div>
+</div>
